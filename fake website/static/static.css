@@ -1,0 +1,111 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif; /* Modern font */
+    background: linear-gradient(135deg, #6dd5ed, #2193b0); /* Colorful gradient background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+.container {
+    background: linear-gradient(135deg, #ffffff, #e0f7fa); /* Subtle gradient for container */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Softer shadow */
+    width: 100%;
+    max-width: 600px; /* Slightly wider for better layout */
+    text-align: center;
+    border: 2px solid #00bcd4; /* Cyan border for vibrancy */
+    transition: transform 0.3s ease; /* Smooth scaling on hover */
+}
+
+.container:hover {
+    transform: scale(1.02); /* Slight zoom effect on hover */
+}
+
+h1 {
+    color: #1e88e5; /* Bright blue for heading */
+    margin-bottom: 15px;
+    font-size: 2.2em; /* Larger heading */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+}
+
+p {
+    color: #555; /* Slightly darker gray for readability */
+    margin-bottom: 25px;
+    font-size: 1.1em;
+}
+
+.input-group {
+    display: flex;
+    gap: 12px; /* Slightly larger gap */
+    margin-bottom: 25px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #26a69a; /* Teal border */
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: #f0f4f8; /* Light background for input */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #0288d1; /* Darker blue on focus */
+    box-shadow: 0 0 8px rgba(2, 136, 209, 0.3); /* Glow effect */
+    outline: none;
+}
+
+button {
+    padding: 12px 25px;
+    background: linear-gradient(90deg, #0288d1, #26a69a); /* Gradient button */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #0277bd, #00897b); /* Darker gradient on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+button:active {
+    transform: translateY(0); /* Reset on click */
+}
+
+.result {
+    margin-top: 25px;
+    font-size: 1.2em;
+}
+
+.phishing {
+    color: #ff5252; /* Bright red-orange for phishing */
+    font-weight: bold;
+    background-color: rgba(255, 82, 82, 0.1); /* Light background for emphasis */
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.legitimate {
+    color: #00c4b4; /* Vibrant teal for legitimate */
+    font-weight: bold;
+    background-color: rgba(0, 196, 180, 0.1); /* Light background */
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.error {
+    color: #d81b60; /* Pink-red for errors */
+    background-color: rgba(216, 27, 96, 0.1); /* Light background */
+    padding: 5px 10px;
+    border-radius: 4px;
+}
